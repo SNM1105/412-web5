@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon's Site</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .logo-image {
+            width: 350x;
+            height: 120px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .profile-image img {
+            max-width: 300px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .work {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .work-image img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .work-description {
+            flex: 1;
+        }
+
+        .work-description h3 {
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-logo img {
+            max-width: 100px;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .contact-columns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .contact-column {
+            flex: 1;
+        }
+
+        .about-section {
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        .tiny-spot {
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .location {
+            margin-top: 20px;
+            size: 100%;
+        }
+
+        .copyright {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .biography-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .square-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .square-text {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .square-image {
+            flex: 1;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Simon's Site</h1>
+        <img src="../img/Digital Signature.png" alt="Logo" class="logo-image">
+        <nav>
+            <ul>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section" id="biography">
+        <h2>Biography</h2>
+        <div class="biography-content">
+            <div class="square-container">
+                <div class="square-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio reiciendis, alias cumque neque nulla saepe modi quis voluptas ipsa a ex eius nihil omnis, in aliquam sunt repudiandae pariatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo vero tenetur nostrum optio sequi quo voluptas? Esse, recusandae temporibus nulla similique modi itaque quidem quo distinctio, ab sed animi laboriosam!</p>
+                <div class="square-image">
+                    <img src="https://placehold.co/200x300" alt="Profile Photo here">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="works">
+        <h2>Works</h2>
+        <div class="work">
+            <div class="work-image">
+                <img src="https://placehold.co/300x200" alt="Work Image 1">
+            </div>
+            <div class="work-description">
+                <h3>Work 1</h3>
+                <p>
+                    Work 1 description here
+                </p>
+            </div>
+        </div>
+        <div class="work">
+            <div class="work-image">
+                <img src="https://placehold.co/300x200" alt="Work Image 2">
+            </div>
+            <div class="work-description">
+                <h3>Work 2</h3>
+                <p>
+                    Work 2 description here
+                </p>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="work-image">
+                <img src="https://placehold.co/300x200" alt="Work Image 3">
+            </div>
+            <div class="work-description">
+                <h3>Work 3</h3>
+                <p>
+                    Work 3 description here
+                </p>
+            </div>
+        </div>
+
+        <div class="work">
+            <div class="work-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="work-description-video">
+                <h3>Work 4</h3>
+                <p>
+                    Video Description here
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <div class="skill-description">
+                <p>
+                    Brief explination of Skills
+                </p>
+            </div>
+            <div class="skill-images">
+                <img src="https://placehold.co/75x75" alt="photoshop">
+                <img src="https://placehold.co/75x75" alt="Illustrator">
+                <img src="https://placehold.co/75x75" alt="Indesign">
+                <img src="https://placehold.co/75x75" alt="Premiere Pro">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="your-footer-logo.png" alt="Footer Logo">
+        </div>
+
+        <div class="contact-columns">
+            <div class="contact-column">
+                <p>Contact Method 1</p>
+                <p>Contact Method 4</p>
+            </div>
+
+            <div class="contact-column">
+                <p>Contact Method 2</p>
+                <p>Contact Method 5</p>
+            </div>
+
+            <div class="contact-column">
+                <p>Contact Method 3</p>
+                <p>Contact Method 6</p>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <div class="about-text">
+                <h3>About Me</h3>
+                <p>About me here</p>
+            </div>
+        </div>
+
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11183.438478813041!2d-73.67537369790037!3d45.51290446710082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9199af35bbd81%3A0xe7336f96498019b7!2sVanier%20College!5e0!3m2!1sen!2sca!4v1695077614681!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        &copy; 2023 Your Name. All rights reserved.
+    </div>
+</body>
+
+</html>
