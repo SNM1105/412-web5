@@ -1,0 +1,231 @@
+h1,
+h2,
+h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 19px;
+}
+
+body {
+    background-color: #333;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 20px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: top 0.3s ease;
+}
+
+.header-logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title h1 {
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.header-title img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Initial styles for small screens */
+nav ul {
+    display: none;
+    min-width: 100%;
+}
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    nav ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+main {
+    max-width: 960px;
+    margin: 120px auto 0;
+    padding: 40px 20px;
+    background-color: #616161;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.services {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services ul {
+    list-style: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+}
+
+.services li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.services li i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ddd;
+}
+
+.services-list {
+    list-style-type: disc;
+}
+
+.services-list li {
+    margin: 10px 0;
+}
+
+.selected-projects {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.selected-projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project {
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #333;
+    color: #ddd;
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+
+.about {
+    background-color: #333;
+    color: #ddd;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space between;
+    width: 100%;
+}
+
+.about-logo img {
+    max-height: 140px;
+    margin-right: 20px;
+}
+
+.about-text {
+    flex-grow: 1;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-radius: 5px;
+}
