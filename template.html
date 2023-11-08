@@ -4,180 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon's Site</title>
-    <style>
-        body,
-        h1,
-        h2,
-        h3,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        header {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
-
-        header h1 {
-            font-size: 36px;
-        }
-
-        header nav ul {
-            list-style: none;
-            margin-top: 20px;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        header nav ul li a {
-            color: #000000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 20px;
-            background-color: #fff;
-            margin: 20px;
-            border-radius: 5px;
-        }
-
-        .logo-image {
-            width: 350x;
-            height: 120px;
-        }
-
-        .section {
-            padding: 20px;
-            background-color: #fff;
-            margin: 20px;
-            border-radius: 5px;
-        }
-
-        .profile-image img {
-            max-width: 300px;
-            display: block;
-            margin: 20px auto;
-        }
-
-        .work {
-            display: flex;
-            margin-bottom: 20px;
-        }
-
-        .work-image img {
-            max-width: 200px;
-            margin-right: 20px;
-        }
-
-        .work-description {
-            flex: 1;
-        }
-
-        .work-description h3 {
-            font-size: 20px;
-        }
-
-        footer {
-            background-color: #ffffff;
-            color: #000000;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .footer-logo img {
-            max-width: 100px;
-            margin-right: 20px;
-            display: inline-block;
-        }
-
-        .contact-columns {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .contact-column {
-            flex: 1;
-        }
-
-        .about-section {
-            display: flex;
-            margin-top: 20px;
-            align-items: center;
-        }
-
-        .tiny-spot {
-            width: 20px;
-            height: 20px;
-            background-color: #000000;
-            border-radius: 50%;
-            margin-left: 10px;
-        }
-
-        .location {
-            margin-top: 20px;
-            size: 100%;
-        }
-
-        .copyright {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-
-        .biography-content {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .square-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .square-text {
-            flex: 1;
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .square-image {
-            flex: 1;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="./template.css">
+    <title>Simon Medalssy's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Outfit:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Simon's Site</h1>
+        <h1>Simon Medalssy's Portfolio</h1>
         <img src="../img/Digital Signature.png" alt="Logo" class="logo-image">
         <nav>
             <ul>
@@ -188,113 +24,102 @@
         </nav>
     </header>
 
-    <section class="section" id="biography">
-        <h2>Biography</h2>
-        <div class="biography-content">
-            <div class="square-container">
-                <div class="square-text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio reiciendis, alias cumque neque nulla saepe modi quis voluptas ipsa a ex eius nihil omnis, in aliquam sunt repudiandae pariatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo vero tenetur nostrum optio sequi quo voluptas? Esse, recusandae temporibus nulla similique modi itaque quidem quo distinctio, ab sed animi laboriosam!</p>
-                <div class="square-image">
-                    <img src="https://placehold.co/200x300" alt="Profile Photo here">
+    <div class="content-wrapper">
+        <section class="section" id="biography">
+            <h2>Biography</h2>
+            <div class="biography-content">
+                <div class="biography-text">
+                    <p>Hi! My name's Simon Medalssy. I'm a 19-year-old student at Vanier College and aspiring graphic
+                        designer. I have some big dreams and a creative mind with tons of ideas. Enjoy my website and
+                        the works I've done over the years.</p>
+                </div>
+                <div class="biography-image">
+                    <img src="../img/templateimg/SimonPfp.jpg" alt="Profile Photo here">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="section" id="works">
-        <h2>Works</h2>
-        <div class="work">
-            <div class="work-image">
-                <img src="https://placehold.co/300x200" alt="Work Image 1">
+        <section class="section" id="works">
+            <h2>Works</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image1.jpg" alt="Image 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image2.jpg" alt="Image 2">
+                </div>
+                <!-- Add more slides here with images and descriptions -->
             </div>
-            <div class="work-description">
-                <h3>Work 1</h3>
-                <p>
-                    Work 1 description here
-                </p>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Add more dots as needed -->
             </div>
-        </div>
-        <div class="work">
-            <div class="work-image">
-                <img src="https://placehold.co/300x200" alt="Work Image 2">
-            </div>
-            <div class="work-description">
-                <h3>Work 2</h3>
-                <p>
-                    Work 2 description here
-                </p>
-            </div>
-        </div>
 
-        <div class="work">
-            <div class="work-image">
-                <img src="https://placehold.co/300x200" alt="Work Image 3">
+            <div class="work">
+                <div class="work-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AsD4o8vq-xU?si=ibqWWaIt8lJGmR56"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="work-description-video">
+                    <h3>The Woodcrest Interview</h3>
+                    <p>This was my first propper dive into video creation. It's a short sketch in which I play the role
+                        of an interviewer, and I have to interview this "Wolf of Wallstreet" type invester called "Mr.
+                        Woodcrest".</p>
+                    <br>
+                    <p>For this project, I had to write the script, perform alongside my friend, plan out the shots and
+                        edit the video. It all came out to be a pretty funny video.</p>
+                </div>
             </div>
-            <div class="work-description">
-                <h3>Work 3</h3>
-                <p>
-                    Work 3 description here
-                </p>
-            </div>
-        </div>
+        </section>
 
-        <div class="work">
-            <div class="work-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0"
-                    allowfullscreen></iframe>
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <div class="skill-description">
+                    <p>Throughout my years studying at Vanier, I've gained experience working with Photoshop,
+                        Illustrator, InDesign, Premiere Pro, and VS Code among other programs that I practice in my free
+                        time.</p>
+                </div>
+                <div class="skill-images">
+                    <img src="../img/templateimg/psicon.png" alt="Photoshop">
+                    <img src="../img/templateimg/aiicon.png" alt="Illustrator">
+                    <img src="../img/templateimg/idicon.png" alt="InDesign">
+                    <img src="../img/templateimg/pricon.png" alt="Premiere Pro">
+                    <img src="../img/templateimg/vsicon.png" alt="Visual Studio Code">
+                </div>
             </div>
-            <div class="work-description-video">
-                <h3>Work 4</h3>
-                <p>
-                    Video Description here
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-            <div class="skill-description">
-                <p>
-                    Brief explination of Skills
-                </p>
-            </div>
-            <div class="skill-images">
-                <img src="https://placehold.co/75x75" alt="photoshop">
-                <img src="https://placehold.co/75x75" alt="Illustrator">
-                <img src="https://placehold.co/75x75" alt="Indesign">
-                <img src="https://placehold.co/75x75" alt="Premiere Pro">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
         <div class="footer-logo">
-            <img src="your-footer-logo.png" alt="Footer Logo">
-        </div>
-
-        <div class="contact-columns">
-            <div class="contact-column">
-                <p>Contact Method 1</p>
-                <p>Contact Method 4</p>
-            </div>
-
-            <div class="contact-column">
-                <p>Contact Method 2</p>
-                <p>Contact Method 5</p>
-            </div>
-
-            <div class="contact-column">
-                <p>Contact Method 3</p>
-                <p>Contact Method 6</p>
-            </div>
+            <img src="../img/Digital Signature.png" alt="Footer Logo">
         </div>
 
         <div class="about-section">
             <div class="about-text">
                 <h3>About Me</h3>
-                <p>About me here</p>
+                <p>Feel free to contact me using these methods if you need to get in touch with me!</p>
+            </div>
+        </div>
+
+        <div class="contact-columns">
+            <div class="contact-column">
+                <img src="../img/templateimg/phone.png">
+                <p>(438) 833-5124</p>
+                <img src="../img/templateimg/insta.png">
+                <p>@roshishappy</p>
+            </div>
+
+            <div class="contact-column">
+                <img src="../img/templateimg/email.png">
+                <p>simonmedalssy@gmail.com</p>
+                <img src="../img/templateimg/linkedin.png">
+                <p>www.linkedin.com/in/medalssy</p>
             </div>
         </div>
 
@@ -307,8 +132,58 @@
     </footer>
 
     <div class="copyright">
-        &copy; 2023 Your Name. All rights reserved.
+        &copy; 2023 Simon Medalssy. All rights reserved.
     </div>
+
+    <script>
+        document.querySelectorAll('header a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100, // Adjust the offset as needed
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+
+            setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
+        }
+
+        // Initialize the slideshow
+        showSlides();
+    </script>
 </body>
 
 </html>
